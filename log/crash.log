@@ -1,0 +1,137 @@
+2018-09-23 22:11:17 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.RockWeb.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{function_clause,[{'Elixir.GenServer',start_link,['Elixir.RockWeb.AmqpProcessor',[],{name,'Elixir.MessageProcessor'}],[{file,"lib/gen_server.ex"},{line,816}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.RockWeb.AmqpProcessor'},{mfargs,{'Elixir.RockWeb.AmqpProcessor',start_link,[{name,'Elixir.MessageProcessor'}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-09-23 22:11:17 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.482.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.RockWeb.AmqpProcessor',{'EXIT',{function_clause,[{'Elixir.GenServer',start_link,['Elixir.RockWeb.AmqpProcessor',[],{name,'Elixir.MessageProcessor'}],[{file,"lib/gen_server.ex"},{line,816}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}}},{'Elixir.RockWeb.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.481.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.483.0>,normal}]
+    links: [<0.481.0>,<0.42.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 259
+  neighbours:
+2018-09-23 22:13:03 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.RockWeb.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{undef,[{'Elixir.RockWeb.AmqpProcessor',start_link,[{name,'Elixir.MessageProcessor'}],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.RockWeb.AmqpProcessor'},{mfargs,{'Elixir.RockWeb.AmqpProcessor',start_link,[{name,'Elixir.MessageProcessor'}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-09-23 22:13:03 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.334.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.RockWeb.AmqpProcessor',{'EXIT',{undef,[{'Elixir.RockWeb.AmqpProcessor',start_link,[{name,'Elixir.MessageProcessor'}],[]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}}},{'Elixir.RockWeb.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.333.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.335.0>,normal}]
+    links: [<0.333.0>,<0.42.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 256
+  neighbours:
+2018-09-23 22:13:17 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.RockWeb.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{function_clause,[{'Elixir.GenServer',start_link,['Elixir.RockWeb.AmqpProcessor',[],{name,'Elixir.MessageProcessor'}],[{file,"lib/gen_server.ex"},{line,816}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.RockWeb.AmqpProcessor'},{mfargs,{'Elixir.RockWeb.AmqpProcessor',start_link,[{name,'Elixir.MessageProcessor'}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-09-23 22:13:17 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.334.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.RockWeb.AmqpProcessor',{'EXIT',{function_clause,[{'Elixir.GenServer',start_link,['Elixir.RockWeb.AmqpProcessor',[],{name,'Elixir.MessageProcessor'}],[{file,"lib/gen_server.ex"},{line,816}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}}},{'Elixir.RockWeb.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.333.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.335.0>,normal}]
+    links: [<0.333.0>,<0.42.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 255
+  neighbours:
+2018-09-23 22:16:12 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.RockWeb.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{function_clause,[{'Elixir.GenServer',start_link,['Elixir.RockWeb.AmqpProcessor',[],{name,'Elixir.MessageProcessor'}],[{file,"lib/gen_server.ex"},{line,816}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.RockWeb.AmqpProcessor'},{mfargs,{'Elixir.RockWeb.AmqpProcessor',start_link,[{name,'Elixir.MessageProcessor'}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-09-23 22:16:12 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.482.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.RockWeb.AmqpProcessor',{'EXIT',{function_clause,[{'Elixir.GenServer',start_link,['Elixir.RockWeb.AmqpProcessor',[],{name,'Elixir.MessageProcessor'}],[{file,"lib/gen_server.ex"},{line,816}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}}},{'Elixir.RockWeb.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.481.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.483.0>,normal}]
+    links: [<0.481.0>,<0.42.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 255
+  neighbours:
+2018-09-23 22:22:24 =SUPERVISOR REPORT====
+     Supervisor: {local,'Elixir.RockWeb.Supervisor'}
+     Context:    start_error
+     Reason:     {'EXIT',{function_clause,[{'Elixir.GenServer',start_link,['Elixir.RockWeb.AmqpProcessor',[],{name,'Elixir.MessageProcessor'}],[{file,"lib/gen_server.ex"},{line,816}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}
+     Offender:   [{pid,undefined},{id,'Elixir.RockWeb.AmqpProcessor'},{mfargs,{'Elixir.RockWeb.AmqpProcessor',start_link,[{name,'Elixir.MessageProcessor'}]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2018-09-23 22:22:24 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.334.0>
+    registered_name: []
+    exception exit: {{{shutdown,{failed_to_start_child,'Elixir.RockWeb.AmqpProcessor',{'EXIT',{function_clause,[{'Elixir.GenServer',start_link,['Elixir.RockWeb.AmqpProcessor',[],{name,'Elixir.MessageProcessor'}],[{file,"lib/gen_server.ex"},{line,816}]},{supervisor,do_start_child_i,3,[{file,"supervisor.erl"},{line,379}]},{supervisor,do_start_child,2,[{file,"supervisor.erl"},{line,365}]},{supervisor,'-start_children/2-fun-0-',3,[{file,"supervisor.erl"},{line,349}]},{supervisor,children_map,4,[{file,"supervisor.erl"},{line,1157}]},{supervisor,init_children,2,[{file,"supervisor.erl"},{line,315}]},{gen_server,init_it,2,[{file,"gen_server.erl"},{line,374}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,342}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}}}},{'Elixir.RockWeb.Application',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,138}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,249}]}]}
+    ancestors: [<0.333.0>]
+    message_queue_len: 1
+    messages: [{'EXIT',<0.335.0>,normal}]
+    links: [<0.333.0>,<0.42.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 259
+  neighbours:
+2018-09-23 22:29:47 =ERROR REPORT====
+Ranch listener 'Elixir.RockWebWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.537.0> exit with reason: {{undef,[{'Elixir.RockWeb.ChatChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-09-23 22:29:50 =ERROR REPORT====
+Ranch listener 'Elixir.RockWebWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.542.0> exit with reason: {{undef,[{'Elixir.RockWeb.ChatChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-09-23 22:29:55 =ERROR REPORT====
+Ranch listener 'Elixir.RockWebWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.544.0> exit with reason: {{undef,[{'Elixir.RockWeb.ChatChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-09-23 22:30:05 =ERROR REPORT====
+Ranch listener 'Elixir.RockWebWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.546.0> exit with reason: {{undef,[{'Elixir.RockWeb.ChatChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-09-23 22:30:15 =ERROR REPORT====
+Ranch listener 'Elixir.RockWebWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.548.0> exit with reason: {{undef,[{'Elixir.RockWeb.ChatChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-09-23 22:30:25 =ERROR REPORT====
+Ranch listener 'Elixir.RockWebWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.550.0> exit with reason: {{undef,[{'Elixir.RockWeb.ChatChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-09-23 22:30:35 =ERROR REPORT====
+Ranch listener 'Elixir.RockWebWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.552.0> exit with reason: {{undef,[{'Elixir.RockWeb.ChatChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-09-23 22:30:45 =ERROR REPORT====
+Ranch listener 'Elixir.RockWebWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.554.0> exit with reason: {{undef,[{'Elixir.RockWeb.ChatChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-09-23 22:30:55 =ERROR REPORT====
+Ranch listener 'Elixir.RockWebWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.557.0> exit with reason: {{undef,[{'Elixir.RockWeb.ChatChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-09-23 22:31:05 =ERROR REPORT====
+Ranch listener 'Elixir.RockWebWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.559.0> exit with reason: {{undef,[{'Elixir.RockWeb.ChatChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
+2018-09-23 22:31:15 =ERROR REPORT====
+Ranch listener 'Elixir.RockWebWeb.Endpoint.HTTP' had connection process started with cowboy_protocol:start_link/4 at <0.561.0> exit with reason: {{undef,[{'Elixir.RockWeb.ChatChannel','__socket__',[private],[]},{'Elixir.Phoenix.Socket.Transport',build_channel_socket,5,[{file,"lib/phoenix/socket/transport.ex"},{line,261}]},{'Elixir.Phoenix.Socket.Transport',do_dispatch,3,[{file,"lib/phoenix/socket/transport.ex"},{line,267}]},{'Elixir.Phoenix.Transports.WebSocket',ws_handle,3,[{file,"lib/phoenix/transports/websocket.ex"},{line,123}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',websocket_handle,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,77}]},{cowboy_websocket,handler_call,7,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_websocket.erl"},{line,588}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,3,[{file,"lib/phoenix/endpoint/cowboy_websocket.ex"},{line,49}]},{cowboy_protocol,execute,4,[{file,"/home/evan/projects/rocks/rock_web/deps/cowboy/src/cowboy_protocol.erl"},{line,442}]}]},{'Elixir.Phoenix.Endpoint.CowboyWebSocket',resume,[]}}
