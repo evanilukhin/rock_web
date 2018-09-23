@@ -23,4 +23,4 @@ RUN cd assets/ && \
     cd - && \
     mix do compile, phx.digest
 
-CMD ["bash", "./lib/rock/entrypoint.sh"]
+CMD ["bash", "./lib/rock_web/entrypoint.sh"]
